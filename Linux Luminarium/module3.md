@@ -222,3 +222,20 @@ ln -s /flag /home/hacker/not-the-flag
 /challenge/catflag
 ```
 ### Flag :pwn.college{AAwaeEKnRBzscRK68iBszVzGBZU.QX5ETN1wyNwcTNxEzW}
+
+## Challenege 5: Comparing files 
+### Description
+This tells us that after line 1 in the first file, the second file has an additional line (1a2 means "after line 1 of file1, add line 2 of file2").
+
+Now for your challenge! There are two files in /challenge:
+
+/challenge/decoys_only.txt contains 100 fake flags
+/challenge/decoys_and_real.txt contains all 100 fake flags plus the one real flag
+Use diff to find what's different between these files and get your flag!
+### Solving
+<li> diff comapres the two files and gives the fie and line with different 
+```
+diff /challenge/decoys_only.txt /challenge/decoys_and_real.txt
+```
+
+### Flag :> pwn.college{ohfbKzGxJbiEcRxk2wsY5ZNB8OX.01MwMDOxwyNwcTNxEzW}
